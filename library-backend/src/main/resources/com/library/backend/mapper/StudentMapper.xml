@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.library.backend.mapper.StudentMapper">
+
+    <resultMap id="BaseResultMap" type="com.library.backend.entity.Student">
+            <id property="studentId" column="student_id" />
+            <result property="name" column="name" />
+            <result property="password" column="password" />
+            <result property="gender" column="gender" />
+            <result property="department" column="department" />
+            <result property="major" column="major" />
+            <result property="grade" column="grade" />
+            <result property="class" column="class" />
+            <result property="phone" column="phone" />
+            <result property="email" column="email" />
+            <result property="accountStatus" column="account_status" />
+            <result property="maxBorrow" column="max_borrow" />
+            <result property="currentBorrow" column="current_borrow" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        student_id,name,password,gender,department,major,
+        grade,class,phone,email,account_status,
+        max_borrow,current_borrow
+    </sql>
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.library.backend.mapper.ReviewMapper">
+
+    <resultMap id="BaseResultMap" type="com.library.backend.entity.Review">
+            <id property="reviewId" column="review_id" />
+            <result property="borrowId" column="borrow_id" />
+            <result property="bookId" column="book_id" />
+            <result property="studentId" column="student_id" />
+            <result property="score" column="score" />
+            <result property="content" column="content" />
+            <result property="reviewDate" column="review_date" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        review_id,borrow_id,book_id,student_id,score,content,
+        review_date
+    </sql>
+</mapper>
